@@ -26,7 +26,7 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper
                 "edad int, " +
                 "contraseña text)");
 
-        BaseDeDatos.execSQL("create table contactos" +            //Se crea la tabla de alumnos
+    /*        BaseDeDatos.execSQL("create table contactos" +            //Se crea la tabla de alumnos
                 "(codigo int primary key, " +
                 "dni text, " +
                 "nombres text, " +
@@ -35,15 +35,17 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper
                 "codigo_familiar text, " +
                 "FOREIGN_KEY (text)");
 
-        /*
+
         CREATE TABLE track(
                 trackid     INTEGER,
                 trackname   TEXT,
                 trackartist INTEGER,
                 FOREIGN KEY(trackartist) REFERENCES artist(artistid)
 
-         */
+
         );
+
+         */
 
     }
 
