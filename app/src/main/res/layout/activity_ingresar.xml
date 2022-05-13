@@ -4,45 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".ingresar">
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="302dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="72dp"
-        android:ems="10"
-        android:hint="Ingrese Contraseña"
-        android:inputType="textPersonName"
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_loguser"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="232dp"
+        android:hint="@string/txt_loguser"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_logpass"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="216dp"
+        android:hint="@string/txt_logpass"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingrese los datos del usuario"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="302dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="48dp"
-        android:ems="10"
-        android:hint="Ingrese Usuario"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
@@ -50,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="196dp"
         android:background="#2196F3"
-        android:onClick="onClickinicio"
+        android:onClick="ingresarAlumnos"
         android:text="Ingresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
