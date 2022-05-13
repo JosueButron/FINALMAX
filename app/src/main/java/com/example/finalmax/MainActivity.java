@@ -17,11 +17,11 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClicking(View view) {
         Toast.makeText(this, "Ingreso", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent("com.example.ingresar"));
+        startActivity(new Intent(MainActivity.this, ingresar.class));
     }
 
     public void onClickreg(View view) {
         Toast.makeText(this, "Registro", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent("com.example.registrar"));
+        startActivity(new Intent(MainActivity.this, registrar.class));
     }
 }

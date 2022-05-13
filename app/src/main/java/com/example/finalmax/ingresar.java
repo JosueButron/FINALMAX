@@ -1,5 +1,6 @@
 package com.example.finalmax;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -24,6 +25,7 @@ public class ingresar extends AppCompatActivity {
 
 
     }
+
 
     public void ingresarAlumnos(View view) {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "maxdbfinal", null, 1);

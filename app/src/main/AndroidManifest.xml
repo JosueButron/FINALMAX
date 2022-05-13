@@ -11,40 +11,40 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:name=".Usuario"
-            android:exported="false"
+            android:exported="true"
             android:label="Usuario">
             <intent-filter>
-                <action android:name="com.example.Usuario" />
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".inicio"
-            android:exported="false"
+            android:exported="true"
             android:label="inicio">
             <intent-filter>
-                <action android:name="com.example.inicio" />
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".registrar"
-            android:exported="false"
+            android:exported="true"
             android:label="registrar">
             <intent-filter>
-                <action android:name="com.example.registrar" />
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ingresar"
-            android:exported="false"
+            android:exported="true"
             android:label="Ingresar">
             <intent-filter>
-                <action android:name="com.example.ingresar" />
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
