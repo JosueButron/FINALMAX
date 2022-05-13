@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">FINALMAX</string>
+    <string name="txt_codigo">Ingrese el código del estudiante</string>
+    <string name="txt_dni">Ingrese el DNI del estudiante</string>
+    <string name="txt_nombres">Ingrese los nombres del estudiante</string>
+    <string name="txt_celular">Ingrese el celular del estudiante</string>
+    <string name="txt_genero">Ingrese el genero del estudiante</string>
+    <string name="txt_edad">Ingrese la edad del estudiante</string>
+    <string name="txt_contrasena">Ingrese la contraseña del estudiante</string>
+
+
+
 </resources>

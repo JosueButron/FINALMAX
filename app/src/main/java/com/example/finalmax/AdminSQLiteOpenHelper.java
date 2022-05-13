@@ -8,11 +8,10 @@ import androidx.annotation.Nullable;
 
 public class AdminSQLiteOpenHelper extends SQLiteOpenHelper
 {
-    private static final String DATABASE_NOMBRE = "max.db";
 
     public AdminSQLiteOpenHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version)
     {
-        super(context, DATABASE_NOMBRE, factory, version);
+        super(context, name, factory, version);
     }
 
     @Override
@@ -23,29 +22,11 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper
                 "nombres text, " +
                 "celular text, " +
                 "genero text, " +
-                "edad int, " +
-                "contraseña text)");
-
-    /*        BaseDeDatos.execSQL("create table contactos" +            //Se crea la tabla de alumnos
-                "(codigo int primary key, " +
-                "dni text, " +
-                "nombres text, " +
-                "celular text, " +
-                "genero text, " +
-                "codigo_familiar text, " +
-                "FOREIGN_KEY (text)");
-
-
-        CREATE TABLE track(
-                trackid     INTEGER,
-                trackname   TEXT,
-                trackartist INTEGER,
-                FOREIGN KEY(trackartist) REFERENCES artist(artistid)
-
-
-        );
-
-         */
+                "edad text, " +
+                "contrasena text," +
+                "nombre1 text," +
+                "celular1 text," +
+                "parentesco1 text)");
 
     }
 
