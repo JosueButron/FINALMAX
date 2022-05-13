@@ -1,5 +1,6 @@
 package com.example.finalmax;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -22,7 +23,10 @@ public class ingresar extends AppCompatActivity {
     }
     public void onClickinicio(View view) {
         Toast.makeText(this, "Inicio", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent("com.example.inicio"));
+        startActivity(new Intent(this, inicio.class));
+//        Intent i = new Intent(this, inicio.class);
+//        i.putExtra("dato",et.getText().toString());
+//        startActivity(i);
 
 
     }

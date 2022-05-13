@@ -16,7 +16,7 @@ public class inicio extends AppCompatActivity {
     }
     public void onClicusu(View view) {
         Toast.makeText(this, "Datos de usuario", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent("com.example.Usuario"));
+        startActivity(new Intent(this, Usuario.class));
     }
 
     public void enviar(View view){
