@@ -18,7 +18,7 @@ public class registrar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar);
 
-        et_codigo= (EditText)findViewById(R.id.txt_codigo);                 //Variables para la base de datos
+        et_codigo= (EditText)findViewById(R.id.nombre);                 //Variables para la base de datos
         et_dni= (EditText)findViewById(R.id.txt_dni);
         et_nombres= (EditText)findViewById(R.id.txt_nombres);
         et_celular= (EditText)findViewById(R.id.txt_celular);

@@ -86,7 +86,7 @@
         tools:ignore="MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/txt_codigo"
+        android:id="@+id/nombre"
         android:layout_width="315dp"
         android:layout_height="48dp"
         android:hint="@string/txt_codigo"

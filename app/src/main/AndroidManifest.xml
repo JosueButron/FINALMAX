@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".update"
+            android:exported="false" />
+        <activity
             android:name=".Usuario"
             android:exported="true"
             android:label="Usuario">
