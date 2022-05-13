@@ -8,6 +8,8 @@
     <string name="txt_edad">Ingrese la edad del estudiante</string>
     <string name="txt_contrasena">Ingrese la contraseña del estudiante</string>
 
+    <string name="txt_loguser">Ingrese el codigo del alumno</string>
+    <string name="txt_logpass">Ingrese la contraseña del estudiante</string>
 
 
 </resources>
