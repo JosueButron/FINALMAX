@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intentBackgroundService = new Intent(this, PushNotification.class);
+        startService(intentBackgroundService);
     }
     public void onClicking(View view) {
         Toast.makeText(this, "Ingreso", Toast.LENGTH_SHORT).show();
