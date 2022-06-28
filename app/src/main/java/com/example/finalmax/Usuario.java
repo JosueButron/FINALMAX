@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -18,12 +19,36 @@ public class Usuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usuario);
 
-        tv = (TextView) findViewById(R.id.tv);
-        tv2 = (TextView) findViewById(R.id.tv2);
-        tv3 = (TextView) findViewById(R.id.tv3);
-        tv4 = (TextView) findViewById(R.id.tv4);
-        tv5 = (TextView) findViewById(R.id.tv5);
-        ejecucionbd();
+//        tv = (TextView) findViewById(R.id.tv);
+//        tv2 = (TextView) findViewById(R.id.tv2);
+//        tv3 = (TextView) findViewById(R.id.tv3);
+//        tv4 = (TextView) findViewById(R.id.tv4);
+//        tv5 = (TextView) findViewById(R.id.tv5);
+        //ejecucionbd();
+    }
+    public void onClicusu(View view) {
+        Toast.makeText(this, "Datos de usuario", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, Usuario.class));
+
+    }
+    public void onClicReply(View view) {
+        Toast.makeText(this, "Respuesta inteligente", Toast.LENGTH_SHORT).show();
+        //startActivity(new Intent(this, SmartReply.class));
+
+    }
+
+    public void onClicllamada(View view) {
+        Toast.makeText(this, "Llamada de Emergencia", Toast.LENGTH_SHORT).show();
+        String phone = "tel:105";
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse(phone));
+        startActivity(intent);
+
+    }
+    public void onClicmap(View view) {
+        Toast.makeText(this, "Mapa de la UCSM", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, Mapa.class));
+
     }
     public void ejecucionbd(){
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "maxdbfinal", null, 1);
